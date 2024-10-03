@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfitX - Generate Signals</title>
+    <link rel="stylesheet" href="css files\signal pg.css">
+</head>
+<body>
+    <div class="signals-container">
+        <header>
+            <h1>Generate Signals</h1>
+            <nav>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="#" id="logout">Logout</a>
+            </nav>
+        </header>
+        <section id="signals-content">
+            <h2>Enter Trading Parameters</h2>
+            <form id="signalsForm">
+                <div>
+                    <label for="symbol">Symbol</label>
+                    <input type="text" id="symbol" required>
+                </div>
+                <div>
+                    <label for="timeframe">Timeframe</label>
+                    <select id="timeframe" required>
+                        <option value="1">1 Minute</option>
+                        <option value="5">5 Minutes</option>
+                        <option value="15">15 Minutes</option>
+                        <option value="60">1 Hour</option>
+                        <option value="D">Daily</option>
+                    </select>
+                </div>
+                <button type="submit">Generate Signal</button>
+            </form>
+            <div id="signalResults">
+                <!-- Signal results will be displayed here -->
+            </div>
+        </section>
+    </div>
+    <script src="jquery\signals.js"></script>
+</body>
+</html>
